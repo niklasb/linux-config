@@ -26,6 +26,7 @@ ln -s ~/vimrc/vim .vim
 
 # zsh
 ln -s ~/linux-config/zshrc .zshrc
+chsh -s /bin/zsh
 
 # GDB
 git clone https://github.com/niklasb/gdbinit
