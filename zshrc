@@ -35,5 +35,12 @@ alias Gr="git reset"
 alias Ga="git add"
 
 
-export WORKON_HOME=$HOME/.virtualenvs
-source /usr/bin/virtualenvwrapper.sh
+function venv_enter() {
+  source "$HOME/.virtualenvs/$1/bin/activate"
+}
+function venv_make() {
+  mkdir -p "$HOME/.virtualenvs"
+  name="$1"
+  shift 1
+  virtualenv "$@" "$HOME/.virtualenvs/$name"
+}
