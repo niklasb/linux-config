@@ -3,7 +3,7 @@ set -e
 
 cd ~
 
-sudo apt install curl git vim exuberant-ctags zsh
+sudo apt install curl git vim exuberant-ctags zsh gdb python-minimal
 git clone https://github.com/niklasb/linux-config
 
 # SSH
@@ -26,3 +26,9 @@ ln -s ~/vimrc/vim .vim
 
 # zsh
 ln -s ~/linux-config/zshrc .zshrc
+
+# GDB
+git clone https://github.com/niklasb/gdbinit/blob/master/gdbinit
+cd gdbinit
+./setup.sh
+cd ~
