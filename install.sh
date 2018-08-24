@@ -27,6 +27,9 @@ ln -s ~/vimrc/vimrc .vimrc
 ln -s ~/vimrc/gvimrc .gvimrc
 ln -s ~/vimrc/vim .vim
 
+# NVM
+curl -o-  https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
+
 # zsh
 ln -s ~/linux-config/zshrc .zshrc
 sudo chsh -s /bin/zsh $(whoami)
