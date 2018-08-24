@@ -17,6 +17,7 @@ fi
 # Git
 git config --global user.name "Niklas Baumstark"
 git config --global user.email niklas.baumstark@gmail.com
+git config --global push.default simple
 
 # Vim
 git clone https://github.com/niklasb/vimrc
