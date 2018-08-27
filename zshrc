@@ -21,10 +21,11 @@ alias ls='ls --color=auto'
 alias ll='ls -alih'
 alias c=clear
 alias ag='ag --color -H'
+alias reload='. ~/.zshrc'
 
 alias Gs="git status"
 alias Gc="git commit"
-alias Gcm="git commit -S -m"
+alias Gcm="git commit -m"
 alias Gd="git diff"
 alias Gdc="git diff --cached"
 alias Gps="git push"
