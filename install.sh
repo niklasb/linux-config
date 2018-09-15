@@ -3,7 +3,7 @@ set -e
 
 cd ~
 
-sudo apt install curl git vim exuberant-ctags zsh gdb silversearcher-ag \
+sudo apt-get install -y curl git vim exuberant-ctags zsh gdb silversearcher-ag \
   python-minimal python-virtualenv python-pip \
   python3-minimal python3-virtualenv python3-pip
 git clone https://github.com/niklasb/linux-config
