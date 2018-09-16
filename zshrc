@@ -1,7 +1,7 @@
 HISTFILE=~/.zsh_history
 HISTSIZE=1000000
 SAVEHIST=100000
-setopt appendhistory HIST_IGNORE_DUPS INC_APPEND_HISTORY
+setopt appendhistory HIST_IGNORE_DUPS INC_APPEND_HISTORY NO_BEEP
 
 bindkey -e
 
