@@ -19,6 +19,7 @@ export EDITOR=vim
 
 alias ls='ls --color=auto'
 alias ll='ls -alih'
+alias less='less -R'
 alias c=clear
 alias ag='ag --color -H'
 alias reload='. ~/.zshrc'
