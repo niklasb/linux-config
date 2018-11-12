@@ -19,10 +19,11 @@ fi
 git clone https://github.com/niklasb/linux-config
 
 # SSH
-if [ ! -e .ssh ]; then
+if [ ! -d .ssh ]; then
   mkdir .ssh
-  curl https://github.com/niklasb.keys >> .ssh/authorized_keys
+  chmod 700 .ssh
 fi
+curl https://github.com/niklasb.keys >> .ssh/authorized_keys
 
 # Git
 git config --global user.name "Niklas Baumstark"
