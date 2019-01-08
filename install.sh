@@ -36,7 +36,6 @@ cd vimrc
 git submodule update --init
 cd ~
 ln -s ~/vimrc/vimrc .vimrc
-ln -s ~/vimrc/gvimrc .gvimrc
 ln -s ~/vimrc/vim .vim
 
 # NVM
