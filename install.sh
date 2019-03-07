@@ -13,7 +13,6 @@ elif which pacman; then
     python2-virtualenv python-virtualenv
 else
   echo >&2 "Neither pacman nor apt-get found"
-  exit 1
 fi
 
 git clone https://github.com/niklasb/linux-config
