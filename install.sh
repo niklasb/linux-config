@@ -38,7 +38,7 @@ ln -s ~/vimrc/vimrc .vimrc
 ln -s ~/vimrc/vim .vim
 
 # NVM
-curl -o-  https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
+git clone https://github.com/lukechilds/zsh-nvm.git ~/.zsh-nvm
 
 # zsh
 ln -s ~/linux-config/zshrc .zshrc
