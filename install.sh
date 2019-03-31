@@ -15,6 +15,8 @@ else
   echo >&2 "Neither pacman nor apt-get found"
 fi
 
+sudo pip3 install keystone-engine
+
 git clone https://github.com/niklasb/linux-config
 
 # SSH
