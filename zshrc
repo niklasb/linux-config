@@ -48,3 +48,6 @@ function venv_make() {
 }
 
 source ~/.zsh-nvm/zsh-nvm.plugin.zsh
+
+alias peda='gdb -ex peda'
+alias gef='gdb -ex gef'
