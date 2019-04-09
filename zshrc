@@ -23,6 +23,7 @@ alias less='less -R'
 alias c=clear
 alias ag='ag --color -H'
 alias reload='. ~/.zshrc'
+alias ipa='ip --brief --color a'
 
 alias Gs="git status"
 alias Gc="git commit"
