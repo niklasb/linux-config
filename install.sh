@@ -15,9 +15,9 @@ else
   echo >&2 "Neither pacman nor apt-get found"
 fi
 
-sudo pip3 install keystone-engine
+#sudo pip3 install keystone-engine
 
-git clone https://github.com/niklasb/linux-config
+#git clone https://github.com/niklasb/linux-config
 
 # SSH
 if [ ! -d .ssh ]; then
@@ -51,3 +51,10 @@ git clone https://github.com/niklasb/gdbinit
 cd gdbinit
 ./setup.sh
 cd ~
+
+# tmux
+if [ ! -d ~/tmux-yank ]; then
+  git clone https://github.com/tmux-plugins/tmux-yank ~/tmux-yank
+fi
+chmod +x ~/tmux-yank/yank.tmux  # should not be necessary
+ln -sf ~/linux-config/tmux.conf ~/.tmux.conf
