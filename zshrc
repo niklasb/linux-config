@@ -52,3 +52,22 @@ source ~/.zsh-nvm/zsh-nvm.plugin.zsh
 
 alias peda='gdb -ex peda'
 alias gef='gdb -ex gef'
+alias ip='python3 -m IPython'
+
+export PATH="$HOME/bin:$PATH"
+
+# WSL stuff
+function start-ssh-agent() {
+  ssh-agent -s > ~/.ssh-agent
+  chmod 600 ~/.ssh-agent
+}
+
+if which clip.exe &>/dev/null; then
+  source ~/.ssh-agent &> /dev/null
+  if ! grep -e ssh-agent /proc/$SSH_AGENT_PID/cmdline &>/dev/null; then
+    echo Starting key agent
+    start-ssh-agent
+    source ~/.ssh-agent > /dev/null
+  fi
+  umask 022
+fi
