@@ -6,7 +6,6 @@ cd ~
 if which apt-get; then
   sudo apt-get update -y
   sudo apt-get install -y curl git vim exuberant-ctags zsh gdb silversearcher-ag \
-    python-minimal python-virtualenv python-pip \
     python3-minimal python3-virtualenv python3-pip
 elif which pacman; then
   sudo pacman -Sy gvim python python2 python-pip python2-pip ctags gdb curl git \
